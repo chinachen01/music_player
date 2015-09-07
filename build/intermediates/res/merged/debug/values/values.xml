@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/WorkSpace/StudioProject/MyApplication/com.scxh.musicplayer/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="player_textview_green">#2FA96C</color>
+    <!-- From: file:/D:/WorkSpace/StudioProject/MyApplication/com.scxh.musicplayer/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">随身听</string>
+    <string name="index_tab_spec1">我的</string>
+    <string name="index_tab_spec2">音乐馆</string>
+    <string name="index_tab_spec3">发现</string>
+    <!-- From: file:/D:/WorkSpace/StudioProject/MyApplication/com.scxh.musicplayer/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="tab_radio_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+</resources>

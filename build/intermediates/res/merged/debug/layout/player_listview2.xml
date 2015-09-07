@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.scxh.music_player.lyric.LyricView
+        android:id="@+id/player_lyricview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView 
+        android:id="@+id/player_msg_nolyric"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="暂无歌词"
+        android:textSize="36sp"
+        android:textColor="@color/player_textview_green"
+        android:visibility="invisible"/>
+
+</FrameLayout>
+<!-- From: file:/D:/WorkSpace/StudioProject/MyApplication/com.scxh.musicplayer/res/layout/player_listview2.xml -->

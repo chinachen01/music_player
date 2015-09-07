@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="#162E3B" >
+            </TabWidget>
+
+      
+             <RadioGroup
+            android:id="@+id/tab_radio_groups"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/tab_radio_main"
+                style="@style/tab_radio_btn_style"
+                 android:textColor="@drawable/selector_tab_radiobtn"
+
+                android:text="我的" />
+
+            <RadioButton
+                android:id="@+id/tab_radio_merchat"
+                style="@style/tab_radio_btn_style"
+                 android:textColor="@drawable/selector_tab_radiobtn"
+                android:text="音乐馆" />
+
+            <RadioButton
+                android:id="@+id/tab_radio_more"
+                style="@style/tab_radio_btn_style"
+                android:textColor="@drawable/selector_tab_radiobtn"
+                android:text="发现" />
+        </RadioGroup>
+        
+                   <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tab_radio_groups" >
+            </FrameLayout>
+        </RelativeLayout>
+    </TabHost>
+
+    <LinearLayout
+        android:id="@+id/index_player_window_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/index_player_title_imag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/index_ic_connect_only_wifi_normal" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <SeekBar
+                android:id="@+id/index_player_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/index_layer_list_player_seekbar"
+                android:thumb="@null" />
+
+            <TextView
+                android:id="@+id/index_player_currentime_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/index_player_seekbar"
+                android:paddingLeft="10dp"
+                android:text="00:00"
+                android:textColor="@android:color/white" />
+		
+            <TextView
+                android:id="@+id/index_player_duration_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/index_player_seekbar"
+                android:paddingRight="10dp"
+                android:text="03:30"
+                android:textColor="@android:color/white" />
+            	<TextView android:id="@+id/index_player_title_txt"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_toLeftOf="@id/index_player_duration_txt"
+			    android:layout_toRightOf="@id/index_player_currentime_txt"
+			    android:layout_below="@id/index_player_seekbar"
+			    android:gravity="center_horizontal"
+			    android:textColor="@color/player_textview_green"
+			    android:ellipsize="end"/>
+            	
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/index_player_play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null" />
+
+        <ImageButton
+            android:id="@+id/index_player_bill_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/index_my_bill_normal_icon_new" />
+    </LinearLayout>
+
+</LinearLayout>

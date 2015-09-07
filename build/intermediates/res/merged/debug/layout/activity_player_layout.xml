@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+	<Button android:id="@+id/player_serch_btn"
+	    android:layout_width="30dp"
+	    android:layout_height="30dp"
+	    android:background="@drawable/seletor_player_search"
+	    android:layout_gravity="right"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="10dp"/>
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/player_viewpager"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"/>
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:layout_marginTop="5dp">
+	        <ImageView
+            android:id="@+id/pager1_btn"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/page_now" />
+
+        <ImageView
+            android:id="@+id/pager2_btn"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/page" />
+
+	</LinearLayout>
+
+ 	<com.scxh.music_player.customView.AlwaysMarqueeTextView
+	    android:id="@+id/player_current_music_txt"
+	    android:layout_width="120dp"
+	    android:layout_height="wrap_content"
+	    android:textSize="16sp"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="10dp"
+	    android:layout_gravity="center_horizontal"
+	    android:textColor="@color/player_textview_green"
+	    android:singleLine="true"
+	    android:ellipsize="marquee"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true"
+	    android:gravity="center_horizontal"/>
+    <LinearLayout
+        android:id="@+id/player_progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/player_currenttime_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@android:color/white" />
+
+        <SeekBar
+            android:id="@+id/player_progress_seekbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:progressDrawable="@drawable/layer_list_player_seekbar"
+            android:thumb="@drawable/player_seekbar_playback_thumb"
+            android:thumbOffset="5dp" />
+
+        <TextView
+            android:id="@+id/player_duraingtime_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03:30"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/player_landscape_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/player_pre_btn"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:background="@drawable/seletor_player_pre" />
+
+        <Button
+            android:id="@+id/player_play_btn"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:background="@drawable/landscape_player_btn_play_normal" />
+
+        <Button
+            android:id="@+id/player_next_btn"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:background="@drawable/seletor_player_next" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/WorkSpace/StudioProject/MyApplication/com.scxh.musicplayer/res/layout/activity_player_layout.xml -->

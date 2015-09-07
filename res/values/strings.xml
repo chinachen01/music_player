@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">随身听</string>
+
+    <string name="index_tab_spec1">我的</string>
+
+    <string name="index_tab_spec2">音乐馆</string>
+
+    <string name="index_tab_spec3">发现</string>
+
+</resources>

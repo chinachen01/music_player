@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/main_bg" 
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/notification_imag"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:background="@drawable/notification_default_cover" />
+
+    <LinearLayout
+        android:id="@+id/notification_linear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:clickable="true">
+        <TextView
+             android:id="@+id/notification_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="title"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/notification_singer_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:singleLine="true"
+            android:text="singer"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/notification_pre_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_notification_player_prev_normal" 
+        android:layout_marginLeft="10dp"
+        android:clickable="true"/>
+
+    <ImageView
+         android:id="@+id/notification_play_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_notification_player_play_normal"
+          android:layout_marginLeft="10dp"
+         android:clickable="true" />
+
+    <ImageView
+         android:id="@+id/notification_next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_notification_player_next_normal"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+         android:clickable="true" />
+
+</LinearLayout><!-- From: file:/D:/WorkSpace/StudioProject/MyApplication/com.scxh.musicplayer/res/layout/notification_item.xml -->
